@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FTN World | Architecture, interiors, landscape and planning in Uttarakhand</title>
+    <meta name="description" content="FTN World designs homes, homestays, resorts and developments for the hills of Uttarakhand. Architecture, interiors, landscape and planning from Haldwani and Dehradun.">
+    <link rel="canonical" href="https://ftnworld.info/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FTN World">
+    <meta property="og:title" content="FTN World">
+    <meta property="og:description" content="Architecture, interiors, landscape and planning for the hills of Uttarakhand.">
+    <meta property="og:image" content="https://ftnworld.info/frontend/img/p1018.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#EEF0F2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0D1120" media="(prefers-color-scheme: dark)">
+
+    <link rel="icon" href="frontend/brand/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="frontend/fonts/urbanist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="frontend/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="frontend/css/app.css?v=20261016e">
+
+    <script>
+        document.documentElement.classList.add('js');
+        (function () {
+            // saved light/dark choice, applied before first paint so there is no flash
+            var t = null;
+            try { t = localStorage.getItem('ftn-theme'); } catch (e) {}
+            if (t !== 'light' && t !== 'dark') return;
+            document.documentElement.setAttribute('data-theme', t);
+            var metas = document.getElementsByTagName('meta');
+            for (var i = 0; i < metas.length; i++) if (metas[i].name === 'theme-color') metas[i].content = t === 'dark' ? '#0D1120' : '#EEF0F2';
+        })();
+        (function () {
+            var force = /[?&]intro=1/.test(location.search);
+            var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var seen = false;
+            try { seen = sessionStorage.getItem('ftn-intro') === '1'; } catch (e) {}
+            if (document.querySelector && (force || (!reduce && !seen))) document.documentElement.classList.add('has-intro');
+        })();
+    </script>
+    </head>
+<body class="page-home">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-stage">
+        <span class="intro-tag intro-tag-l">Architecture, interiors,<br>landscape and planning</span>
+        <svg class="intro-mark" viewBox="0 -735 1784 770" focusable="false">
+            <defs>
+                <clipPath id="ftnClip">
+                    <path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/>                </clipPath>
+            </defs>
+            <g clip-path="url(#ftnClip)">
+                <rect x="0" y="-735" width="1784" height="770" class="intro-mark-bg"/>
+                <image class="intro-mark-img" href="frontend/img/p472.jpg" x="-120" y="-860" width="2024" height="1020" preserveAspectRatio="xMidYMid slice"/>
+            </g>
+            <path class="intro-mark-edge" d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path class="intro-mark-edge" d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path class="intro-mark-edge" d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/>        </svg>
+        <span class="intro-tag intro-tag-r">For the hills<br>of Uttarakhand</span>
+    </div>
+    <div class="intro-ground">
+        <span class="intro-pct num" data-intro-pct>0%</span>
+        <span class="intro-line"><span class="intro-line-fill" data-intro-fill></span></span>
+    </div>
+</div>
+
+    <header class="bar" id="bar" data-bar>
+    <a class="bar-logo" href="./" aria-label="FTN World, home">
+        <svg class="logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 -780 4440 815" role="img" aria-label="FTN World" fill="currentColor"><title>FTN World</title><path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/><path d="M2680 -121 2467 -727 2257 -121 2055 -700H1994L2253 27L2467 -576L2681 27L2940 -700H2879Z"/><path d="M2913 -230Q2913 -161 2944.0 -106.5Q2975 -52 3028.5 -21.0Q3082 10 3149 10Q3216 10 3269.5 -21.0Q3323 -52 3354.0 -106.5Q3385 -161 3385 -230Q3385 -300 3354.0 -354.0Q3323 -408 3269.5 -439.0Q3216 -470 3149 -470Q3082 -470 3028.5 -439.0Q2975 -408 2944.0 -354.0Q2913 -300 2913 -230ZM2966 -230Q2966 -286 2990.0 -329.0Q3014 -372 3055.5 -396.5Q3097 -421 3149 -421Q3201 -421 3242.5 -396.5Q3284 -372 3308.0 -328.5Q3332 -285 3332 -230Q3332 -174 3308.0 -131.0Q3284 -88 3242.5 -63.5Q3201 -39 3149 -39Q3097 -39 3055.5 -63.5Q3014 -88 2990.0 -131.0Q2966 -174 2966 -230Z"/><path d="M3555 -460H3503V0H3555ZM3708 -399 3737 -442Q3721 -457 3701.5 -463.5Q3682 -470 3660 -470Q3624 -470 3594.5 -445.0Q3565 -420 3548.0 -377.5Q3531 -335 3531 -280H3555Q3555 -319 3564.0 -351.0Q3573 -383 3593.5 -402.0Q3614 -421 3648 -421Q3666 -421 3679.5 -415.5Q3693 -410 3708 -399Z"/><path d="M3825 -780V0H3877V-780Z"/><path d="M4388 -780V0H4440V-780ZM3995 -230Q3995 -156 4025.0 -102.0Q4055 -48 4105.5 -19.0Q4156 10 4217 10Q4277 10 4320.0 -21.5Q4363 -53 4387.5 -107.5Q4412 -162 4412 -230Q4412 -299 4387.5 -353.0Q4363 -407 4320.0 -438.5Q4277 -470 4217 -470Q4156 -470 4105.5 -441.0Q4055 -412 4025.0 -358.5Q3995 -305 3995 -230ZM4048 -230Q4048 -290 4071.5 -333.0Q4095 -376 4135.5 -398.5Q4176 -421 4224 -421Q4267 -421 4304.5 -396.0Q4342 -371 4365.0 -328.0Q4388 -285 4388 -230Q4388 -175 4365.0 -132.0Q4342 -89 4304.5 -64.0Q4267 -39 4224 -39Q4176 -39 4135.5 -61.5Q4095 -84 4071.5 -127.0Q4048 -170 4048 -230Z"/></svg>
+
+    </a>
+    <nav class="bar-nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a class="bar-cta" href="estimate.html">Get an estimate <span aria-hidden="true">&rarr;</span></a>
+    <button class="theme-btn bar-theme" type="button" aria-pressed="false" aria-label="Dark mode" title="Light or dark" data-theme-toggle><svg class="theme-ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
+    <button class="bar-menu bar-burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu" data-menu-open><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></button>
+</header>
+
+<div class="menu" id="menu" hidden data-menu>
+    <div class="menu-top">
+        <a class="bar-logo" href="./" aria-label="FTN World, home">
+            <svg class="logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 -780 4440 815" role="img" aria-label="FTN World" fill="currentColor"><title>FTN World</title><path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/><path d="M2680 -121 2467 -727 2257 -121 2055 -700H1994L2253 27L2467 -576L2681 27L2940 -700H2879Z"/><path d="M2913 -230Q2913 -161 2944.0 -106.5Q2975 -52 3028.5 -21.0Q3082 10 3149 10Q3216 10 3269.5 -21.0Q3323 -52 3354.0 -106.5Q3385 -161 3385 -230Q3385 -300 3354.0 -354.0Q3323 -408 3269.5 -439.0Q3216 -470 3149 -470Q3082 -470 3028.5 -439.0Q2975 -408 2944.0 -354.0Q2913 -300 2913 -230ZM2966 -230Q2966 -286 2990.0 -329.0Q3014 -372 3055.5 -396.5Q3097 -421 3149 -421Q3201 -421 3242.5 -396.5Q3284 -372 3308.0 -328.5Q3332 -285 3332 -230Q3332 -174 3308.0 -131.0Q3284 -88 3242.5 -63.5Q3201 -39 3149 -39Q3097 -39 3055.5 -63.5Q3014 -88 2990.0 -131.0Q2966 -174 2966 -230Z"/><path d="M3555 -460H3503V0H3555ZM3708 -399 3737 -442Q3721 -457 3701.5 -463.5Q3682 -470 3660 -470Q3624 -470 3594.5 -445.0Q3565 -420 3548.0 -377.5Q3531 -335 3531 -280H3555Q3555 -319 3564.0 -351.0Q3573 -383 3593.5 -402.0Q3614 -421 3648 -421Q3666 -421 3679.5 -415.5Q3693 -410 3708 -399Z"/><path d="M3825 -780V0H3877V-780Z"/><path d="M4388 -780V0H4440V-780ZM3995 -230Q3995 -156 4025.0 -102.0Q4055 -48 4105.5 -19.0Q4156 10 4217 10Q4277 10 4320.0 -21.5Q4363 -53 4387.5 -107.5Q4412 -162 4412 -230Q4412 -299 4387.5 -353.0Q4363 -407 4320.0 -438.5Q4277 -470 4217 -470Q4156 -470 4105.5 -441.0Q4055 -412 4025.0 -358.5Q3995 -305 3995 -230ZM4048 -230Q4048 -290 4071.5 -333.0Q4095 -376 4135.5 -398.5Q4176 -421 4224 -421Q4267 -421 4304.5 -396.0Q4342 -371 4365.0 -328.0Q4388 -285 4388 -230Q4388 -175 4365.0 -132.0Q4342 -89 4304.5 -64.0Q4267 -39 4224 -39Q4176 -39 4135.5 -61.5Q4095 -84 4071.5 -127.0Q4048 -170 4048 -230Z"/></svg>
+
+        </a>
+        <button class="bar-menu" type="button" data-menu-close>Close</button>
+    </div>
+    <nav class="menu-links" aria-label="Menu">
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+        <a href="estimate.html" class="menu-cta">Get an estimate</a>
+    </nav>
+    <p class="menu-foot">+91 94565 58811<br>mail@ftnworld.info</p>
+</div>
+
+    <main id="main">
+
+<section class="sheet" id="top" aria-labelledby="hero-title">
+    <div class="sheet-frame">
+        <div class="sheet-nav">
+            <a class="sheet-logo" href="./" aria-label="FTN World, home">
+                <svg class="logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 -780 4440 815" role="img" aria-label="FTN World" fill="currentColor"><title>FTN World</title><path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/><path d="M2680 -121 2467 -727 2257 -121 2055 -700H1994L2253 27L2467 -576L2681 27L2940 -700H2879Z"/><path d="M2913 -230Q2913 -161 2944.0 -106.5Q2975 -52 3028.5 -21.0Q3082 10 3149 10Q3216 10 3269.5 -21.0Q3323 -52 3354.0 -106.5Q3385 -161 3385 -230Q3385 -300 3354.0 -354.0Q3323 -408 3269.5 -439.0Q3216 -470 3149 -470Q3082 -470 3028.5 -439.0Q2975 -408 2944.0 -354.0Q2913 -300 2913 -230ZM2966 -230Q2966 -286 2990.0 -329.0Q3014 -372 3055.5 -396.5Q3097 -421 3149 -421Q3201 -421 3242.5 -396.5Q3284 -372 3308.0 -328.5Q3332 -285 3332 -230Q3332 -174 3308.0 -131.0Q3284 -88 3242.5 -63.5Q3201 -39 3149 -39Q3097 -39 3055.5 -63.5Q3014 -88 2990.0 -131.0Q2966 -174 2966 -230Z"/><path d="M3555 -460H3503V0H3555ZM3708 -399 3737 -442Q3721 -457 3701.5 -463.5Q3682 -470 3660 -470Q3624 -470 3594.5 -445.0Q3565 -420 3548.0 -377.5Q3531 -335 3531 -280H3555Q3555 -319 3564.0 -351.0Q3573 -383 3593.5 -402.0Q3614 -421 3648 -421Q3666 -421 3679.5 -415.5Q3693 -410 3708 -399Z"/><path d="M3825 -780V0H3877V-780Z"/><path d="M4388 -780V0H4440V-780ZM3995 -230Q3995 -156 4025.0 -102.0Q4055 -48 4105.5 -19.0Q4156 10 4217 10Q4277 10 4320.0 -21.5Q4363 -53 4387.5 -107.5Q4412 -162 4412 -230Q4412 -299 4387.5 -353.0Q4363 -407 4320.0 -438.5Q4277 -470 4217 -470Q4156 -470 4105.5 -441.0Q4055 -412 4025.0 -358.5Q3995 -305 3995 -230ZM4048 -230Q4048 -290 4071.5 -333.0Q4095 -376 4135.5 -398.5Q4176 -421 4224 -421Q4267 -421 4304.5 -396.0Q4342 -371 4365.0 -328.0Q4388 -285 4388 -230Q4388 -175 4365.0 -132.0Q4342 -89 4304.5 -64.0Q4267 -39 4224 -39Q4176 -39 4135.5 -61.5Q4095 -84 4071.5 -127.0Q4048 -170 4048 -230Z"/></svg>
+
+            </a>
+            <nav class="sheet-cells" aria-label="Primary">
+                <a class="cell" href="#projects">Projects</a>
+                <a class="cell" href="#services">Services</a>
+                <a class="cell" href="#studio">Studio</a>
+                <a class="cell" href="#contact">Contact</a>
+                <a class="cell cell-accent" href="estimate.html">Get an estimate<span class="cell-arr" aria-hidden="true">&rarr;</span></a>
+            </nav>
+            <button class="sheet-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu" data-menu-open><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></button>
+            <button class="theme-btn sheet-theme" type="button" aria-pressed="false" aria-label="Dark mode" title="Light or dark" data-theme-toggle><svg class="theme-ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
+        </div>
+
+        <div class="ruler ruler-h" aria-hidden="true"><span class="cross"></span><span class="cross"></span></div>
+
+        <div class="sheet-draw">
+            <div class="ruler ruler-v ruler-v-l" aria-hidden="true"></div>
+            <div class="ruler ruler-v ruler-v-r" aria-hidden="true"></div>
+
+            <svg class="elev" viewBox="0 0 1200 560" role="img" aria-labelledby="elevTitle" data-elev>
+                <title id="elevTitle">Line drawing of a two-level house stepped into a hillside, with deodar trees and mountains behind</title>
+                <defs>
+                    <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                        <line x1="0" y1="0" x2="0" y2="9" class="hatch-line"/>
+                    </pattern>
+                </defs>
+
+                <g class="fills" data-fills>
+                    <path class="fl-earth" d="M0 520 C110 518 220 512 300 506 V499 H312 V492 H324 V485 H336 V478 H640 V418 H900 C985 400 1085 370 1200 344 V560 H0 Z"/>
+                    <polygon class="fl-wall" points="380,478 380,303 640,281 640,478"/>
+                    <polygon class="fl-wall" points="640,418 640,245 900,215 900,418"/>
+                    <polygon class="fl-roof" points="366,296 640,272 640,280 366,304"/>
+                    <polygon class="fl-roof" points="632,238 912,206 912,214 632,246"/>
+                    <rect class="fl-glass" x="396" y="404" width="132" height="74"/>
+                    <rect class="fl-glass" x="396" y="316" width="228" height="52"/>
+                                            <rect class="fl-glass" x="664" y="340" width="32" height="66"/>
+                        <rect class="fl-glass" x="664" y="256" width="32" height="58"/>
+                                            <rect class="fl-glass" x="724" y="340" width="32" height="66"/>
+                        <rect class="fl-glass" x="724" y="256" width="32" height="58"/>
+                                            <rect class="fl-glass" x="784" y="340" width="32" height="66"/>
+                        <rect class="fl-glass" x="784" y="256" width="32" height="58"/>
+                                            <rect class="fl-glass" x="844" y="340" width="32" height="66"/>
+                        <rect class="fl-glass" x="844" y="256" width="32" height="58"/>
+                                        <rect class="fl-door" x="556" y="410" width="44" height="68"/>
+                </g>
+
+                <g class="lines">
+                    <g data-step="0">
+                        <polyline class="ln ln-faint" points="0,250 90,214 150,232 240,168 310,204 400,150 470,190 560,118 640,174 720,138 800,184 880,128 960,178 1040,148 1120,194 1200,168"/>
+                        <path class="ln ln-ground" d="M0 520 C110 518 220 512 300 506 V499 H312 V492 H324 V485 H336 V478 H640 V418 H900 C985 400 1085 370 1200 344"/>
+                    </g>
+                    <g data-step="1">
+                        <path class="ln ln-dim ln-dash" d="M380 52 V500 M640 52 V500 M900 52 V500"/>
+                        <circle class="ln ln-dim" cx="380" cy="40" r="11"/>
+                        <circle class="ln ln-dim" cx="640" cy="40" r="11"/>
+                        <circle class="ln ln-dim" cx="900" cy="40" r="11"/>
+                        <path class="ln ln-dim" d="M380 540 H900 M380 532 V548 M640 532 V548 M900 532 V548 M375 545 L385 535 M635 545 L645 535 M895 545 L905 535"/>
+                        <path class="ln ln-dash" d="M360 494 H640 M640 434 H900"/>
+                    </g>
+                    <g data-step="2">
+                        <path class="ln" d="M380 478 V303 M640 478 V245 M900 418 V215 M380 388 H640 M640 328 H900"/>
+                        <path class="ln" d="M366 304 L640 280 M366 296 L640 272 M366 296 V304 M632 246 L912 214 M632 238 L912 206 M912 206 V214 M632 238 V246"/>
+                    </g>
+                    <g data-step="3">
+                        <path class="ln" d="M396 404 H528 V478 M396 404 V478 M429 404 V478 M462 404 V478 M495 404 V478"/>
+                        <path class="ln" d="M396 316 H624 V368 H396 Z M453 316 V368 M510 316 V368 M567 316 V368"/>
+                        <path class="ln" d="M556 478 V410 H600 V478 M592 444 H596"/>
+                        <path class="ln" d="M340 388 H380 M340 394 H380 M340 388 V362 H380 M350 388 V362 M360 388 V362 M370 388 V362"/>
+                                                    <path class="ln" d="M664 340 h32 v66 h-32 Z M664 256 h32 v58 h-32 Z"/>
+                                                    <path class="ln" d="M724 340 h32 v66 h-32 Z M724 256 h32 v58 h-32 Z"/>
+                                                    <path class="ln" d="M784 340 h32 v66 h-32 Z M784 256 h32 v58 h-32 Z"/>
+                                                    <path class="ln" d="M844 340 h32 v66 h-32 Z M844 256 h32 v58 h-32 Z"/>
+                                                <path class="ln" d="M920 418 V360 M992 418 V360 M910 360 H1002 M916 354 V360 M928 354 V360 M940 354 V360 M952 354 V360 M964 354 V360 M976 354 V360 M988 354 V360 M1000 354 V360"/>
+                    </g>
+                    <g data-step="4">
+                        <path class="ln" d="M110 519 V387 M76 479 L110 427 L144 479 M84 447 L110 401 L136 447 M93 419 L110 377 L127 419"/>
+                        <path class="ln" d="M178 516 V407.8 M150.1 483.2 L178 440.6 L205.9 483.2 M156.7 457 L178 419.2 L199.3 457 M164.1 434 L178 399.6 L191.9 434"/>
+                        <path class="ln" d="M1080 386 V254 M1046 346 L1080 294 L1114 346 M1054 314 L1080 268 L1106 314 M1063 286 L1080 244 L1097 286"/>
+                        <path class="ln" d="M1150 362 V248.5 M1120.8 327.6 L1150 282.9 L1179.2 327.6 M1127.6 300.1 L1150 260.5 L1172.4 300.1 M1135.4 276 L1150 239.9 L1164.6 276"/>
+                        <path class="ln ln-dim" d="M262 472 L270 478 L278 472 Z M262 382 L270 388 L278 382 Z M262 292 L270 298 L278 292 Z M278 478 H372 M278 388 H334 M278 298 H372"/>
+                    </g>
+                </g>
+
+                <g class="labels" data-labels>
+                    <text x="380" y="44" class="lb lb-c">A</text>
+                    <text x="640" y="44" class="lb lb-c">B</text>
+                    <text x="900" y="44" class="lb lb-c">C</text>
+                    <text x="230" y="474" class="lb">+0.00</text>
+                    <text x="230" y="384" class="lb">+3.00</text>
+                    <text x="230" y="294" class="lb">+6.00</text>
+                    <text x="510" y="532" class="lb lb-c">8.65</text>
+                    <text x="770" y="532" class="lb lb-c">8.65</text>
+                </g>
+            </svg>
+
+            <aside class="sheet-side">
+            <ol class="drawlog" aria-label="Drawing sequence" data-drawlog>
+                <li>Survey the site</li>
+                <li>Set out the grid</li>
+                <li>Raise the structure</li>
+                <li>Detail the openings</li>
+                <li>Plant the trees</li>
+            </ol>
+
+            <dl class="titleblock" data-titleblock>
+                <div><dt>Practice</dt><dd>Architecture, interiors, landscape, planning</dd></div>
+                <div><dt>Founded</dt><dd>2018, Haldwani</dd></div>
+                <div><dt>Focus</dt><dd>Hill sites and tourism projects</dd></div>
+                <div><dt>Offices</dt><dd>Haldwani and Dehradun</dd></div>
+            </dl>
+            </aside>
+        </div>
+
+        <div class="ruler ruler-h" aria-hidden="true"><span class="cross"></span><span class="cross"></span></div>
+
+        <div class="sheet-base">
+            <h1 class="hero-title" id="hero-title"><span class="line"><span>Designed for</span></span> <span class="line"><span>the site you have</span></span></h1>
+            <p class="hero-sub">Architecture, interiors, landscape and planning for the hills of Uttarakhand, from contour survey to slab details.</p>
+        </div>
+    </div>
+</section>
+
+<section class="studio" id="studio" data-chapter="Studio">
+    <p class="manifesto" data-words>Established in 2018 in Haldwani. More than 270 projects later, every design still starts the same way: with the slope, the soil, the light and the people who will live there.</p>
+    <div class="facts">
+        <div class="fact"><span class="fact-n num" data-count="2018" data-plain>2018</span><p>Founded in Haldwani</p></div>
+        <div class="fact"><span class="fact-n num"><span data-count="270">270</span>+</span><p>Projects across Uttarakhand</p></div>
+        <div class="fact"><span class="fact-n num"><span data-count="15">15</span>+</span><p>Years of combined experience</p></div>
+        <div class="fact"><span class="fact-n num" data-count="98">98</span><p>Types of drawings we produce</p></div>
+    </div>
+</section>
+
+<section class="works" id="projects" data-chapter="Projects" aria-labelledby="works-title">
+    <h2 class="sr-only" id="works-title">Selected projects</h2>
+    <div class="works-pin" data-works>
+                    <article class="work is-active" data-work aria-label="Hill homestay, Mukteshwar">
+                <div class="work-half work-a"><img src="frontend/img/p472.jpg" alt="Fog over forested hills" loading="lazy" width="1600" height="1200"></div>
+                <div class="work-half work-b"><img src="frontend/img/p679.jpg" alt="Spiral staircase seen from below" loading="lazy" width="1600" height="1200"></div>
+            </article>
+                    <article class="work " data-work aria-label="Valley residence, Bhimtal">
+                <div class="work-half work-a"><img src="frontend/img/p566.jpg" alt="Green valley between mountain slopes" loading="lazy" width="1600" height="1200"></div>
+                <div class="work-half work-b"><img src="frontend/img/p1081.jpg" alt="Repeating white concrete facade" loading="lazy" width="1600" height="1200"></div>
+            </article>
+                    <article class="work " data-work aria-label="Town house, Nainital">
+                <div class="work-half work-a"><img src="frontend/img/p188.jpg" alt="Snow covered rooftops of a hill town" loading="lazy" width="1600" height="1200"></div>
+                <div class="work-half work-b"><img src="frontend/img/p508.jpg" alt="Long arched corridor in pale stone" loading="lazy" width="1600" height="1200"></div>
+            </article>
+        
+        <div class="work-card" data-work-card>
+            <div class="work-card-in">
+                                    <div class="work-meta is-active" data-work-meta>
+                        <div class="wm-left"><h3>Hill homestay</h3><span class="wm-place">Mukteshwar</span></div>
+                        <span class="wm-type"><span class="wm-kind">Hospitality</span><span class="wm-year num">2025</span></span>
+                    </div>
+                                    <div class="work-meta " data-work-meta>
+                        <div class="wm-left"><h3>Valley residence</h3><span class="wm-place">Bhimtal</span></div>
+                        <span class="wm-type"><span class="wm-kind">Residential</span><span class="wm-year num">2024</span></span>
+                    </div>
+                                    <div class="work-meta " data-work-meta>
+                        <div class="wm-left"><h3>Town house</h3><span class="wm-place">Nainital</span></div>
+                        <span class="wm-type"><span class="wm-kind">Residential</span><span class="wm-year num">2024</span></span>
+                    </div>
+                                <svg class="work-card-mark" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 -735 1784 770" role="img" aria-label="FTN" fill="currentColor"><title>FTN</title><path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/></svg>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services" data-chapter="Services">
+    <h2 class="sec-title" data-split>Four disciplines, one drawing set.</h2>
+    <div class="svc-list">
+                    <details class="svc" name="svc">
+                <summary>
+                    <span class="svc-name">Planning</span>
+                    <span class="svc-line">Master plans and site infrastructure for plotted, gated and resort developments.</span>
+                    <span class="svc-count num">26 drawing types</span>
+                    <span class="svc-plus" aria-hidden="true"></span>
+                </summary>
+                <ul class="svc-items">
+                    <li>Master plan and layout</li><li>Contour survey</li><li>Site drainage and services</li><li>Walkthrough animation</li>                </ul>
+            </details>
+                    <details class="svc" name="svc">
+                <summary>
+                    <span class="svc-name">Architecture</span>
+                    <span class="svc-line">From concept to the drawings your contractor builds from.</span>
+                    <span class="svc-count num">37 drawing types</span>
+                    <span class="svc-plus" aria-hidden="true"></span>
+                </summary>
+                <ul class="svc-items">
+                    <li>Floor plans and elevations</li><li>Structure with bar bending schedules</li><li>Door and window schedules</li><li>Municipal sanction drawings</li>                </ul>
+            </details>
+                    <details class="svc" name="svc">
+                <summary>
+                    <span class="svc-name">Interiors</span>
+                    <span class="svc-line">Rooms planned to the centimetre, then detailed for the carpenter.</span>
+                    <span class="svc-count num">28 drawing types</span>
+                    <span class="svc-plus" aria-hidden="true"></span>
+                </summary>
+                <ul class="svc-items">
+                    <li>Furniture layouts</li><li>Ceilings and lighting</li><li>Modular kitchens</li><li>Custom joinery</li>                </ul>
+            </details>
+                    <details class="svc" name="svc">
+                <summary>
+                    <span class="svc-name">Landscape</span>
+                    <span class="svc-line">Gardens and open ground that hold the slope and suit the climate.</span>
+                    <span class="svc-count num">7 drawing types</span>
+                    <span class="svc-plus" aria-hidden="true"></span>
+                </summary>
+                <ul class="svc-items">
+                    <li>Landscape master plan</li><li>Hardscape and paving</li><li>Native planting</li><li>Outdoor lighting and irrigation</li>                </ul>
+            </details>
+            </div>
+</section>
+
+<section class="hills" id="hills" data-chapter="Hill sites">
+    <div class="hills-track">
+    <div class="hills-pin" data-hills>
+        <figure class="hills-img"><img src="frontend/img/p664.jpg" alt="Snow covered peaks above a rocky valley" loading="lazy" width="2000" height="1200"></figure>
+        <div class="hills-copy">
+            <h2>Hill sites are our everyday work.</h2>
+            <p>Most of our projects sit on slopes. These drawings are standard in our sets, not extras.</p>
+        </div>
+    </div>
+    </div>
+    <ul class="hills-list">
+        <li><b>Contour survey</b><span>Total station survey of levels, trees and boundaries before any line is drawn.</span></li>
+        <li><b>Retaining walls</b><span>Walls sized for the cut, with drainage behind them.</span></li>
+        <li><b>Cut and fill</b><span>Earthwork planned so the house sits into the slope, not on top of it.</span></li>
+        <li><b>Slope drainage</b><span>Storm water routed around the building and off the site.</span></li>
+        <li><b>Sloping roofs</b><span>Trusses, purlins and sheeting detailed for snow and monsoon.</span></li>
+    </ul>
+</section>
+
+<section class="process" id="process" data-chapter="Process">
+    <h2 class="sec-title" data-split>From plot to handover.</h2>
+    <div class="proc" data-proc>
+        <span class="proc-rule" aria-hidden="true" data-proc-line></span>
+        <ol class="proc-steps">
+            <li><span class="proc-dot" aria-hidden="true"></span><h3>Survey</h3><p>Manual or total station survey of the plot, its contours, trees and existing services.</p></li>
+            <li><span class="proc-dot" aria-hidden="true"></span><h3>Design</h3><p>Concept, layouts and 3D views, revised with you until the plan fits the site and the family.</p></li>
+            <li><span class="proc-dot" aria-hidden="true"></span><h3>Detail</h3><p>Working drawings for structure, masonry, doors, windows, plumbing, wiring and drainage.</p></li>
+            <li><span class="proc-dot" aria-hidden="true"></span><h3>Supervise</h3><p>Site visits at key stages, with measurement and bill checks against the drawings.</p></li>
+        </ol>
+    </div>
+</section>
+
+<nav class="chapters" aria-label="Page sections" data-chapters>
+    <a href="#studio">Studio<i></i></a>
+    <a href="#projects">Projects<i></i></a>
+    <a href="#services">Services<i></i></a>
+    <a href="#hills">Hill sites<i></i></a>
+    <a href="#process">Process<i></i></a>
+    <a href="#contact">Contact<i></i></a>
+</nav>
+    </main>
+
+    <footer class="foot" id="contact">
+    <div class="foot-cta">
+        <h2 class="foot-title" data-split>Have a plot in the hills?</h2>
+        <div class="foot-cta-side">
+            <p>Tell us where the plot is and what you plan to build. We will call you back to talk through the drawings you need.</p>
+            <form class="enquiry" action="backend/enquiry.php" method="post" data-enquiry novalidate>
+                <div class="enq-grid">
+                    <div class="enq-field">
+                        <label for="enq-name">Name</label>
+                        <input id="enq-name" name="name" type="text" autocomplete="name" maxlength="120" required>
+                        <span class="enq-err" data-err="name"></span>
+                    </div>
+                    <div class="enq-field">
+                        <label for="enq-phone">Phone</label>
+                        <input id="enq-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required>
+                        <span class="enq-err" data-err="phone"></span>
+                    </div>
+                    <div class="enq-field">
+                        <label for="enq-town">Town or village</label>
+                        <input id="enq-town" name="town" type="text" autocomplete="address-level2" maxlength="120" required>
+                        <span class="enq-err" data-err="town"></span>
+                    </div>
+                    <div class="enq-field">
+                        <label for="enq-area">Plot area in sq ft <span class="enq-opt">(optional)</span></label>
+                        <input id="enq-area" name="plot_area" type="text" inputmode="numeric" maxlength="20">
+                        <span class="enq-err" data-err="plot_area"></span>
+                    </div>
+                    <div class="enq-field enq-wide">
+                        <label for="enq-msg">What are you planning? <span class="enq-opt">(optional)</span></label>
+                        <textarea id="enq-msg" name="message" rows="3" maxlength="2000"></textarea>
+                    </div>
+                </div>
+                <div class="enq-hp" aria-hidden="true">
+                    <label for="enq-website">Leave this field empty</label>
+                    <input id="enq-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
+                <input type="hidden" name="started" value="" data-started>
+                <div class="enq-actions">
+                    <button class="btn btn-light" type="submit" data-enquiry-submit>Send enquiry <span class="arr" aria-hidden="true">&rarr;</span></button>
+                    <a class="enq-alt" href="estimate.html">Or build an itemised fee estimate</a>
+                </div>
+                <p class="enq-status" role="status" aria-live="polite" data-enquiry-status></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="foot-grid">
+        <div class="foot-col">
+            <h3>Head office</h3>
+            <p>Hydel Gate, Nainital Road<br>Haldwani, Uttarakhand</p>
+            <p><a href="tel:+919456558811">+91 94565 58811</a></p>
+        </div>
+        <div class="foot-col">
+            <h3>Branch</h3>
+            <p>Dehradun, Uttarakhand</p>
+            <p><a href="tel:+917817878811">+91 78178 78811</a></p>
+        </div>
+        <div class="foot-col">
+            <h3>Write to us</h3>
+            <p><a href="mailto:mail@ftnworld.info">mail@ftnworld.info</a></p>
+        </div>
+        <nav class="foot-col" aria-label="Footer">
+            <h3>Explore</h3>
+            <p><a href="#projects">Projects</a><br><a href="#services">Services</a><br><a href="#studio">Studio</a></p>
+        </nav>
+    </div>
+
+    <div class="foot-base">
+        <a class="foot-logo" href="./" aria-label="FTN World, home">
+            <svg class="logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 -780 4440 815" role="img" aria-label="FTN World" fill="currentColor"><title>FTN World</title><path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/><path d="M2680 -121 2467 -727 2257 -121 2055 -700H1994L2253 27L2467 -576L2681 27L2940 -700H2879Z"/><path d="M2913 -230Q2913 -161 2944.0 -106.5Q2975 -52 3028.5 -21.0Q3082 10 3149 10Q3216 10 3269.5 -21.0Q3323 -52 3354.0 -106.5Q3385 -161 3385 -230Q3385 -300 3354.0 -354.0Q3323 -408 3269.5 -439.0Q3216 -470 3149 -470Q3082 -470 3028.5 -439.0Q2975 -408 2944.0 -354.0Q2913 -300 2913 -230ZM2966 -230Q2966 -286 2990.0 -329.0Q3014 -372 3055.5 -396.5Q3097 -421 3149 -421Q3201 -421 3242.5 -396.5Q3284 -372 3308.0 -328.5Q3332 -285 3332 -230Q3332 -174 3308.0 -131.0Q3284 -88 3242.5 -63.5Q3201 -39 3149 -39Q3097 -39 3055.5 -63.5Q3014 -88 2990.0 -131.0Q2966 -174 2966 -230Z"/><path d="M3555 -460H3503V0H3555ZM3708 -399 3737 -442Q3721 -457 3701.5 -463.5Q3682 -470 3660 -470Q3624 -470 3594.5 -445.0Q3565 -420 3548.0 -377.5Q3531 -335 3531 -280H3555Q3555 -319 3564.0 -351.0Q3573 -383 3593.5 -402.0Q3614 -421 3648 -421Q3666 -421 3679.5 -415.5Q3693 -410 3708 -399Z"/><path d="M3825 -780V0H3877V-780Z"/><path d="M4388 -780V0H4440V-780ZM3995 -230Q3995 -156 4025.0 -102.0Q4055 -48 4105.5 -19.0Q4156 10 4217 10Q4277 10 4320.0 -21.5Q4363 -53 4387.5 -107.5Q4412 -162 4412 -230Q4412 -299 4387.5 -353.0Q4363 -407 4320.0 -438.5Q4277 -470 4217 -470Q4156 -470 4105.5 -441.0Q4055 -412 4025.0 -358.5Q3995 -305 3995 -230ZM4048 -230Q4048 -290 4071.5 -333.0Q4095 -376 4135.5 -398.5Q4176 -421 4224 -421Q4267 -421 4304.5 -396.0Q4342 -371 4365.0 -328.0Q4388 -285 4388 -230Q4388 -175 4365.0 -132.0Q4342 -89 4304.5 -64.0Q4267 -39 4224 -39Q4176 -39 4135.5 -61.5Q4095 -84 4071.5 -127.0Q4048 -170 4048 -230Z"/></svg>
+
+        </a>
+        <p>&copy; <span data-year>2026</span> FTN World. Architecture, interiors, landscape and planning.</p>
+    </div>
+</footer>
+
+    <script src="frontend/vendor/gsap.min.js" defer></script>
+    <script src="frontend/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="frontend/vendor/lenis.min.js" defer></script>
+    <script src="frontend/js/app.js?v=20261016e" defer></script>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /backend/
+Allow: /
+
+Sitemap: https://ftnworld.info/sitemap.xml

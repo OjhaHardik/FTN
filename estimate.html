@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get an estimate | FTN World</title>
+    <meta name="description" content="Build an itemised fee estimate for architecture, interiors, landscape and planning drawings from FTN World.">
+    <link rel="canonical" href="https://ftnworld.info/estimate.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FTN World">
+    <meta property="og:title" content="Get an estimate | FTN World">
+    <meta property="og:description" content="Build an itemised fee estimate for architecture, interiors, landscape and planning drawings from FTN World.">
+    <meta property="og:image" content="https://ftnworld.info/frontend/img/p1018.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#EEF0F2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0D1120" media="(prefers-color-scheme: dark)">
+
+    <link rel="icon" href="frontend/brand/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="frontend/fonts/urbanist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="frontend/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="frontend/css/app.css?v=20261016e">
+
+    <script>
+        document.documentElement.classList.add('js');
+        (function () {
+            // saved light/dark choice, applied before first paint so there is no flash
+            var t = null;
+            try { t = localStorage.getItem('ftn-theme'); } catch (e) {}
+            if (t !== 'light' && t !== 'dark') return;
+            document.documentElement.setAttribute('data-theme', t);
+            var metas = document.getElementsByTagName('meta');
+            for (var i = 0; i < metas.length; i++) if (metas[i].name === 'theme-color') metas[i].content = t === 'dark' ? '#0D1120' : '#EEF0F2';
+        })();
+    </script>
+    </head>
+<body class="page-inner">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="bar" id="bar" data-bar>
+    <a class="bar-logo" href="./" aria-label="FTN World, home">
+        <svg class="logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 -780 4440 815" role="img" aria-label="FTN World" fill="currentColor"><title>FTN World</title><path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/><path d="M2680 -121 2467 -727 2257 -121 2055 -700H1994L2253 27L2467 -576L2681 27L2940 -700H2879Z"/><path d="M2913 -230Q2913 -161 2944.0 -106.5Q2975 -52 3028.5 -21.0Q3082 10 3149 10Q3216 10 3269.5 -21.0Q3323 -52 3354.0 -106.5Q3385 -161 3385 -230Q3385 -300 3354.0 -354.0Q3323 -408 3269.5 -439.0Q3216 -470 3149 -470Q3082 -470 3028.5 -439.0Q2975 -408 2944.0 -354.0Q2913 -300 2913 -230ZM2966 -230Q2966 -286 2990.0 -329.0Q3014 -372 3055.5 -396.5Q3097 -421 3149 -421Q3201 -421 3242.5 -396.5Q3284 -372 3308.0 -328.5Q3332 -285 3332 -230Q3332 -174 3308.0 -131.0Q3284 -88 3242.5 -63.5Q3201 -39 3149 -39Q3097 -39 3055.5 -63.5Q3014 -88 2990.0 -131.0Q2966 -174 2966 -230Z"/><path d="M3555 -460H3503V0H3555ZM3708 -399 3737 -442Q3721 -457 3701.5 -463.5Q3682 -470 3660 -470Q3624 -470 3594.5 -445.0Q3565 -420 3548.0 -377.5Q3531 -335 3531 -280H3555Q3555 -319 3564.0 -351.0Q3573 -383 3593.5 -402.0Q3614 -421 3648 -421Q3666 -421 3679.5 -415.5Q3693 -410 3708 -399Z"/><path d="M3825 -780V0H3877V-780Z"/><path d="M4388 -780V0H4440V-780ZM3995 -230Q3995 -156 4025.0 -102.0Q4055 -48 4105.5 -19.0Q4156 10 4217 10Q4277 10 4320.0 -21.5Q4363 -53 4387.5 -107.5Q4412 -162 4412 -230Q4412 -299 4387.5 -353.0Q4363 -407 4320.0 -438.5Q4277 -470 4217 -470Q4156 -470 4105.5 -441.0Q4055 -412 4025.0 -358.5Q3995 -305 3995 -230ZM4048 -230Q4048 -290 4071.5 -333.0Q4095 -376 4135.5 -398.5Q4176 -421 4224 -421Q4267 -421 4304.5 -396.0Q4342 -371 4365.0 -328.0Q4388 -285 4388 -230Q4388 -175 4365.0 -132.0Q4342 -89 4304.5 -64.0Q4267 -39 4224 -39Q4176 -39 4135.5 -61.5Q4095 -84 4071.5 -127.0Q4048 -170 4048 -230Z"/></svg>
+
+    </a>
+    <nav class="bar-nav" aria-label="Primary">
+        <a href="./#projects">Projects</a>
+        <a href="./#services">Services</a>
+        <a href="./#studio">Studio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a class="bar-cta" href="estimate.html">Get an estimate <span aria-hidden="true">&rarr;</span></a>
+    <button class="theme-btn bar-theme" type="button" aria-pressed="false" aria-label="Dark mode" title="Light or dark" data-theme-toggle><svg class="theme-ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
+    <button class="bar-menu bar-burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu" data-menu-open><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></button>
+</header>
+
+<div class="menu" id="menu" hidden data-menu>
+    <div class="menu-top">
+        <a class="bar-logo" href="./" aria-label="FTN World, home">
+            <svg class="logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 -780 4440 815" role="img" aria-label="FTN World" fill="currentColor"><title>FTN World</title><path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/><path d="M2680 -121 2467 -727 2257 -121 2055 -700H1994L2253 27L2467 -576L2681 27L2940 -700H2879Z"/><path d="M2913 -230Q2913 -161 2944.0 -106.5Q2975 -52 3028.5 -21.0Q3082 10 3149 10Q3216 10 3269.5 -21.0Q3323 -52 3354.0 -106.5Q3385 -161 3385 -230Q3385 -300 3354.0 -354.0Q3323 -408 3269.5 -439.0Q3216 -470 3149 -470Q3082 -470 3028.5 -439.0Q2975 -408 2944.0 -354.0Q2913 -300 2913 -230ZM2966 -230Q2966 -286 2990.0 -329.0Q3014 -372 3055.5 -396.5Q3097 -421 3149 -421Q3201 -421 3242.5 -396.5Q3284 -372 3308.0 -328.5Q3332 -285 3332 -230Q3332 -174 3308.0 -131.0Q3284 -88 3242.5 -63.5Q3201 -39 3149 -39Q3097 -39 3055.5 -63.5Q3014 -88 2990.0 -131.0Q2966 -174 2966 -230Z"/><path d="M3555 -460H3503V0H3555ZM3708 -399 3737 -442Q3721 -457 3701.5 -463.5Q3682 -470 3660 -470Q3624 -470 3594.5 -445.0Q3565 -420 3548.0 -377.5Q3531 -335 3531 -280H3555Q3555 -319 3564.0 -351.0Q3573 -383 3593.5 -402.0Q3614 -421 3648 -421Q3666 -421 3679.5 -415.5Q3693 -410 3708 -399Z"/><path d="M3825 -780V0H3877V-780Z"/><path d="M4388 -780V0H4440V-780ZM3995 -230Q3995 -156 4025.0 -102.0Q4055 -48 4105.5 -19.0Q4156 10 4217 10Q4277 10 4320.0 -21.5Q4363 -53 4387.5 -107.5Q4412 -162 4412 -230Q4412 -299 4387.5 -353.0Q4363 -407 4320.0 -438.5Q4277 -470 4217 -470Q4156 -470 4105.5 -441.0Q4055 -412 4025.0 -358.5Q3995 -305 3995 -230ZM4048 -230Q4048 -290 4071.5 -333.0Q4095 -376 4135.5 -398.5Q4176 -421 4224 -421Q4267 -421 4304.5 -396.0Q4342 -371 4365.0 -328.0Q4388 -285 4388 -230Q4388 -175 4365.0 -132.0Q4342 -89 4304.5 -64.0Q4267 -39 4224 -39Q4176 -39 4135.5 -61.5Q4095 -84 4071.5 -127.0Q4048 -170 4048 -230Z"/></svg>
+
+        </a>
+        <button class="bar-menu" type="button" data-menu-close>Close</button>
+    </div>
+    <nav class="menu-links" aria-label="Menu">
+        <a href="./#projects">Projects</a>
+        <a href="./#services">Services</a>
+        <a href="./#studio">Studio</a>
+        <a href="#contact">Contact</a>
+        <a href="estimate.html" class="menu-cta">Get an estimate</a>
+    </nav>
+    <p class="menu-foot">+91 94565 58811<br>mail@ftnworld.info</p>
+</div>
+
+    <main id="main">
+        <section class="inner-head">
+    <h1 class="sec-title">Get an estimate</h1>
+    <p class="lede">Choose your project type and the drawings you need. The estimator itemises every fee, including site visits and GST.</p>
+</section>
+<section class="estimator">
+    <iframe src="https://ftn-estimate.ai.studio/" title="FTN World fee estimator" loading="lazy" allow="geolocation; clipboard-write"></iframe>
+    <p class="cap">Prefer to talk? Call <a href="tel:+919456558811">+91 94565 58811</a> or write to <a href="mailto:mail@ftnworld.info">mail@ftnworld.info</a>.</p>
+</section>
+    </main>
+
+    <footer class="foot" id="contact">
+    <div class="foot-cta">
+        <h2 class="foot-title" data-split>Have a plot in the hills?</h2>
+        <div class="foot-cta-side">
+            <p>Tell us where the plot is and what you plan to build. We will call you back to talk through the drawings you need.</p>
+            <form class="enquiry" action="backend/enquiry.php" method="post" data-enquiry novalidate>
+                <div class="enq-grid">
+                    <div class="enq-field">
+                        <label for="enq-name">Name</label>
+                        <input id="enq-name" name="name" type="text" autocomplete="name" maxlength="120" required>
+                        <span class="enq-err" data-err="name"></span>
+                    </div>
+                    <div class="enq-field">
+                        <label for="enq-phone">Phone</label>
+                        <input id="enq-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required>
+                        <span class="enq-err" data-err="phone"></span>
+                    </div>
+                    <div class="enq-field">
+                        <label for="enq-town">Town or village</label>
+                        <input id="enq-town" name="town" type="text" autocomplete="address-level2" maxlength="120" required>
+                        <span class="enq-err" data-err="town"></span>
+                    </div>
+                    <div class="enq-field">
+                        <label for="enq-area">Plot area in sq ft <span class="enq-opt">(optional)</span></label>
+                        <input id="enq-area" name="plot_area" type="text" inputmode="numeric" maxlength="20">
+                        <span class="enq-err" data-err="plot_area"></span>
+                    </div>
+                    <div class="enq-field enq-wide">
+                        <label for="enq-msg">What are you planning? <span class="enq-opt">(optional)</span></label>
+                        <textarea id="enq-msg" name="message" rows="3" maxlength="2000"></textarea>
+                    </div>
+                </div>
+                <div class="enq-hp" aria-hidden="true">
+                    <label for="enq-website">Leave this field empty</label>
+                    <input id="enq-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
+                <input type="hidden" name="started" value="" data-started>
+                <div class="enq-actions">
+                    <button class="btn btn-light" type="submit" data-enquiry-submit>Send enquiry <span class="arr" aria-hidden="true">&rarr;</span></button>
+                    <a class="enq-alt" href="estimate.html">Or build an itemised fee estimate</a>
+                </div>
+                <p class="enq-status" role="status" aria-live="polite" data-enquiry-status></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="foot-grid">
+        <div class="foot-col">
+            <h3>Head office</h3>
+            <p>Hydel Gate, Nainital Road<br>Haldwani, Uttarakhand</p>
+            <p><a href="tel:+919456558811">+91 94565 58811</a></p>
+        </div>
+        <div class="foot-col">
+            <h3>Branch</h3>
+            <p>Dehradun, Uttarakhand</p>
+            <p><a href="tel:+917817878811">+91 78178 78811</a></p>
+        </div>
+        <div class="foot-col">
+            <h3>Write to us</h3>
+            <p><a href="mailto:mail@ftnworld.info">mail@ftnworld.info</a></p>
+        </div>
+        <nav class="foot-col" aria-label="Footer">
+            <h3>Explore</h3>
+            <p><a href="./#projects">Projects</a><br><a href="./#services">Services</a><br><a href="./#studio">Studio</a></p>
+        </nav>
+    </div>
+
+    <div class="foot-base">
+        <a class="foot-logo" href="./" aria-label="FTN World, home">
+            <svg class="logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 -780 4440 815" role="img" aria-label="FTN World" fill="currentColor"><title>FTN World</title><path d="M0 -700H445V-535H186V-416H435V-263H186V0H0Z"/><path d="M494 -527H690V0H884V-527H1080V-700H494Z"/><path d="M1598 -700V-344L1129 -735V0H1315V-356L1784 35V-700Z"/><path d="M2680 -121 2467 -727 2257 -121 2055 -700H1994L2253 27L2467 -576L2681 27L2940 -700H2879Z"/><path d="M2913 -230Q2913 -161 2944.0 -106.5Q2975 -52 3028.5 -21.0Q3082 10 3149 10Q3216 10 3269.5 -21.0Q3323 -52 3354.0 -106.5Q3385 -161 3385 -230Q3385 -300 3354.0 -354.0Q3323 -408 3269.5 -439.0Q3216 -470 3149 -470Q3082 -470 3028.5 -439.0Q2975 -408 2944.0 -354.0Q2913 -300 2913 -230ZM2966 -230Q2966 -286 2990.0 -329.0Q3014 -372 3055.5 -396.5Q3097 -421 3149 -421Q3201 -421 3242.5 -396.5Q3284 -372 3308.0 -328.5Q3332 -285 3332 -230Q3332 -174 3308.0 -131.0Q3284 -88 3242.5 -63.5Q3201 -39 3149 -39Q3097 -39 3055.5 -63.5Q3014 -88 2990.0 -131.0Q2966 -174 2966 -230Z"/><path d="M3555 -460H3503V0H3555ZM3708 -399 3737 -442Q3721 -457 3701.5 -463.5Q3682 -470 3660 -470Q3624 -470 3594.5 -445.0Q3565 -420 3548.0 -377.5Q3531 -335 3531 -280H3555Q3555 -319 3564.0 -351.0Q3573 -383 3593.5 -402.0Q3614 -421 3648 -421Q3666 -421 3679.5 -415.5Q3693 -410 3708 -399Z"/><path d="M3825 -780V0H3877V-780Z"/><path d="M4388 -780V0H4440V-780ZM3995 -230Q3995 -156 4025.0 -102.0Q4055 -48 4105.5 -19.0Q4156 10 4217 10Q4277 10 4320.0 -21.5Q4363 -53 4387.5 -107.5Q4412 -162 4412 -230Q4412 -299 4387.5 -353.0Q4363 -407 4320.0 -438.5Q4277 -470 4217 -470Q4156 -470 4105.5 -441.0Q4055 -412 4025.0 -358.5Q3995 -305 3995 -230ZM4048 -230Q4048 -290 4071.5 -333.0Q4095 -376 4135.5 -398.5Q4176 -421 4224 -421Q4267 -421 4304.5 -396.0Q4342 -371 4365.0 -328.0Q4388 -285 4388 -230Q4388 -175 4365.0 -132.0Q4342 -89 4304.5 -64.0Q4267 -39 4224 -39Q4176 -39 4135.5 -61.5Q4095 -84 4071.5 -127.0Q4048 -170 4048 -230Z"/></svg>
+
+        </a>
+        <p>&copy; <span data-year>2026</span> FTN World. Architecture, interiors, landscape and planning.</p>
+    </div>
+</footer>
+
+    <script src="frontend/vendor/gsap.min.js" defer></script>
+    <script src="frontend/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="frontend/vendor/lenis.min.js" defer></script>
+    <script src="frontend/js/app.js?v=20261016e" defer></script>
+    </body>
+</html>

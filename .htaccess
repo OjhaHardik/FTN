@@ -1,0 +1,66 @@
+# FTN World website. Upload to public_html (the domain root) on BigRock.
+# Upload only: .htaccess, index.html, estimate.html, 404.html, robots.txt, sitemap.xml,
+# frontend/ and backend/. Never upload ftnworld-website/ (research and brand working files).
+
+Options -Indexes
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+# ---- Force HTTPS (uncomment once the SSL certificate is active in cPanel) ----
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTPS} !=on
+#     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# ---- Never serve secrets, SQL, notes or working folders ----
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(sql|md|log|ini|example|sh|py)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+RedirectMatch 404 ^/(ftnworld-website|tools)(/.*)?$
+
+# ---- Old WordPress addresses go to their new home ----
+RedirectMatch 301 ^/estimate(xx1)?/?$ /estimate.html
+RedirectMatch 301 ^/(wp-admin|wp-content|wp-includes|wp-json|feed|comments|category|tag|author|[0-9]{4})(/.*)?$ /
+RedirectMatch 301 ^/(wp-login|xmlrpc)\.php$ /
+
+# ---- Security headers ----
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self \"https://ftn-estimate.ai.studio\")"
+</IfModule>
+
+# ---- Caching: assets are versioned (?v=) so they can be cached for a long time ----
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 6 months"
+    ExpiresByType image/svg+xml "access plus 6 months"
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript image/svg+xml application/json
+</IfModule>
+<IfModule mod_mime.c>
+    AddType font/woff2 .woff2
+</IfModule>
